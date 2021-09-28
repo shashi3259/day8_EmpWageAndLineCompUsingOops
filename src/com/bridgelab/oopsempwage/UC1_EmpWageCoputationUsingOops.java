@@ -69,24 +69,24 @@ class Employee{
 			case 1:
 				System.out.println("Day" + i + ": Employee is present and "
 						+ "today's emplyee wage is: " + empWageperHr*empDayhr );
-				
+
 				break;
-			
+
 			case 2:
 				System.out.println("Day" + i + ": Employee is part time doing  and"
 						+ " today's emplyee wage is: " + empWageperHr*partTimehr );
 
 				break;
-			
+
 			case 0:
 				System.out.println("Day" + i + ": Employee is absent");
 				break;
 			}	
-			
+
 		}
 
 	}
-	
+
 	// UC5_ Calculating Wage for a month
 	public void calculateWageForMonth() {
 		for(int i= 0; i<=20; i++) {
@@ -97,32 +97,29 @@ class Employee{
 						+ "today's emplyee wage is: " + empWageperHr*empDayhr );
 				fullDayWage += empWageperHr*empDayhr;
 				break;
-			
+
 			case 2:
 				System.out.println("Day" + i + ": Employee is part time doing  and"
 						+ " today's emplyee wage is: " + empWageperHr*partTimehr );
 				partTimeWage += empWageperHr*partTimehr;
 				break;
-			
+
 			case 0:
 				System.out.println("Day" + i + ": Employee is absent");
 				break;
 			}	
-			
+
 		}
 		System.out.println("Employee wahe for a month = "+ (fullDayWage+partTimeWage));
 	}
 }
 
-
-
-
 public class UC1_EmpWageCoputationUsingOops {
 	public static void main(String[] args) {
 		Employee emp = new Employee();
-		//		emp.checkAbsentOrPresent();
-//		emp.calculateDailyWage();
-//		emp.switchCase();
+		emp.checkAbsentOrPresent();
+		emp.calculateDailyWage();
+		emp.switchCase();
 		emp.calculateWageForMonth();
 
 

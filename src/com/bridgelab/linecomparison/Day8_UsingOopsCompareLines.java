@@ -97,12 +97,7 @@ class geometry{
 		}
 
 	}
-
 }
-
-
-
-
 
 public class Day8_UsingOopsCompareLines {
 
@@ -112,8 +107,5 @@ public class Day8_UsingOopsCompareLines {
 		//		calculate.lengthBetweenTwoPoints();
 		//		calculate.equals();
 		calculate.compareTo();
-
-
 	}
-
 }
